@@ -1,0 +1,5 @@
+../testdata/images/auto-9.png
+399
+363
+532
+430

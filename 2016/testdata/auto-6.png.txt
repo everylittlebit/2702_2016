@@ -1,0 +1,5 @@
+../testdata/images/auto-6.png
+173
+154
+263
+205

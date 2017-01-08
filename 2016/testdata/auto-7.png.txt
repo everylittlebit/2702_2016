@@ -1,0 +1,5 @@
+../testdata/images/auto-7.png
+398
+363
+532
+432

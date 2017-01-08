@@ -1,0 +1,5 @@
+../testdata/images/auto-3.png
+203
+244
+292
+298

@@ -1,0 +1,5 @@
+../testdata/images/auto-8.png
+393
+356
+529
+430

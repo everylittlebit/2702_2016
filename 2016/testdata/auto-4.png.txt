@@ -1,0 +1,5 @@
+../testdata/images/auto-4.png
+204
+200
+302
+261
