@@ -17,6 +17,7 @@ struct pos {
     int x2;
     int y2;
     int quality2;
+    int minVal;
 
 };
 

@@ -41,7 +41,7 @@ int main(int argc, char** argv)
     VideoCapture cap;
     // open the default camera, use something different from 0 otherwise;
     // Check VideoCapture documentation.
-    if(!cap.open(1)) //switch to thius for the built-in camera
+    if(!cap.open(0)) //switch to thius for the built-in camera
         return -1;
 
     cap.set(CAP_PROP_CONTRAST, -0.75);
@@ -53,14 +53,13 @@ int main(int argc, char** argv)
     for(;;)
     {
         cap >> imgCurrent;
-        if( imgCurrent.empty() ) break; // end of video stream
-        pos mypos = process(imgCurrent, 0);
+        //pos mypos = process(imgCurrent, 0);
 
-        Mat imgWithCircle = imgCurrent.clone();
-        circle(imgWithCircle, Point(mypos.x, mypos.y), 10, Scalar(255, 0, 0));
+        //Mat imgWithCircle = imgCurrent.clone();
+        //circle(imgWithCircle, Point(mypos.x, mypos.y), 10, Scalar(255, 0, 0));
 
         Mat bigImg;
-        resize(imgWithCircle, bigImg, Size(640, 480));
+        resize(imgCurrent, bigImg, Size(640, 480));
 
         imshow("window", bigImg);
         waitKey(30);
